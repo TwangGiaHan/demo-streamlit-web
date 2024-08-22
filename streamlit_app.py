@@ -25,6 +25,12 @@ project_3_page = st.Page(
     icon = ":material/imagesmode:",
 )
 
+project_4_page = st.Page(
+    page = "views/hyperparameter_tuning.py",
+    title = "Hyperparameter Tuning",
+    icon = ":material/tune:",
+)
+
 #--- NAVIGATION SETUP [WITHOUT SECTIONS] ---
 # pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
 
@@ -32,7 +38,7 @@ project_3_page = st.Page(
 pg = st.navigation(
     {
         "Info": [about_page],
-        "Projects": [project_1_page, project_2_page, project_3_page]
+        "Projects": [project_1_page, project_2_page, project_3_page, project_4_page]
     }
 )
 
