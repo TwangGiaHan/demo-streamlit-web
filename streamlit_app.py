@@ -1,10 +1,12 @@
 import streamlit as st
 
 #---- PAGE SETUP ----
+st.set_page_config(layout="wide")
 about_page = st.Page(
     page = "views/about_me.py",
     title="About Me",
     icon= ":material/account_circle:",
+
 )
 
 project_1_page = st.Page(
@@ -31,6 +33,12 @@ project_4_page = st.Page(
     icon = ":material/tune:",
 )
 
+project_5_page = st.Page(
+    page = "views/eda.py",
+    title = "EDA Automated using Python",
+    icon = ":material/bar_chart:",
+)
+
 #--- NAVIGATION SETUP [WITHOUT SECTIONS] ---
 # pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
 
@@ -38,7 +46,7 @@ project_4_page = st.Page(
 pg = st.navigation(
     {
         "Info": [about_page],
-        "Projects": [project_1_page, project_2_page, project_3_page, project_4_page]
+        "Projects": [project_1_page, project_2_page, project_3_page, project_4_page, project_5_page]
     }
 )
 

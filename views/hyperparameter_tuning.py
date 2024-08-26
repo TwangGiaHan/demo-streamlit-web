@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV
 
-st.write("## Hyperparameter Tuning with Scikit-Learn!")
+st.write("## Hyperparameter Tuning with Scikit-Learn! ")
 st.write("Tune **parameter** with Scikit-Learn's *GridSearchCV*")
 st.write("\n")
 
